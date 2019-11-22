@@ -85,6 +85,11 @@ h3.title {
     font-weight: 400;
     line-height: 35px;
 }
+.word2{
+    color: #00dcff;
+    size: 20px;
+    margin: 10px;
+}
 h3.clr{color:#fff;}
 .ser-text-wthree h4{
     font-size: 25px;
