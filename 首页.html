@@ -3,13 +3,21 @@
 
 <head>
     <title>离天最近的地方-西藏</title>
-    <!--<embed src="music.mp3"  autostart="true" loop="true">-->
-    <!--<audio controls="controls" hidden="hidden" autoplay="autoplay" loop="loop">-->
-        <!--&lt;!&ndash;<source src="你要播放的音乐.ogg" type="audio/ogg" />&ndash;&gt;-->
-        <!--<source src="music.mp3" type="audio/mpeg" />-->
-    <!--</audio>-->
-    <!--<iframe allow="autoplay" src="http://data.huiyi8.com/2017/gha/03/17/1702.mp3"></iframe>-->
-
+    <audio controls="controls"  autoplay="autoplay" loop="loop" id="audio1" hidden="hidden">
+        <source src="music.mp3" type="audio/mpeg" />
+    </audio>
+    <script type="text/javascript">
+        var sum=1;
+        function audioPlay() {
+            if(sum%2==1){
+                document.getElementById("audio1").play();
+                sum++;
+            }else{
+                document.getElementById("audio1").pause();
+                sum++;
+            }
+        }
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="" />
@@ -56,7 +64,7 @@
                                     </DIV>
                                 </a>
                             <li>
-                                <a href="#explore" class="btn nav-hover scroll">首页</a>
+                                <a href="#explore" class="btn nav-hover scroll" onclick="audioPlay()">首页</a>
                             </li>
                             </li>
                             <li>
