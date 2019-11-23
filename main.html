@@ -7,7 +7,7 @@
         <source src="music.mp3" type="audio/mpeg" />
     </audio>
     <script type="text/javascript">
-        var sum=1;
+        var sum=0;
         function audioPlay() {
             if(sum%2==1){
                 document.getElementById("audio1").play();
@@ -38,11 +38,16 @@
     <link href="http://fonts.googlea.piscom/css?family=Monoton" rel="stylesheet">
 
     <link href="css/main/slider.css" type="text/css" rel="stylesheet" media="all">
-
+    <!--<script type="text/javascript">-->
+        <!--function openwin() {-->
+            <!--window.open (".html", "newwindow", "height=200, width=300, top=200,left=400,toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");-->
+        <!--}-->
+    <!--</script>-->
 </head>
 
-<body id="top">
 
+<body id="top">
+<div id="win2" >
 <div class="banner">
     <div class="cd-radial-slider-wrapper">
 
@@ -357,6 +362,7 @@
         </div>
     </div>
 </section>
+</div>
 <script src="js/main/bootstrap.js"></script>
 <script src="js/main/jquery-2.2.3.min.js"></script>
 <script src="js/main/snap.svg-min.js"></script>
